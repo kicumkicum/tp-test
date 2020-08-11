@@ -1,7 +1,9 @@
 module.exports = (req, res) => {
   var mem = require('memory-chunk-store')
   const torrentStream = require(`torrent-stream`)
-  const {filePath, magnet} = req.params;
+  // const {filePath, magnet} = req.params;
+  const filePath = `bbb_sunflower_1080p_30fps_normal.mp4`;
+  const magnet = `88594AAACBDE40EF3E2510C47374EC0AA396C08E`;
   console.log(magnet);
   const engine = torrentStream(magnet, {
     storage: mem
