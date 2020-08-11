@@ -9,11 +9,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf ./lib",
-    "prebuild": "npm run clean",
-    "build": "tsc",
-    "watch": "npm run prebuild && tsc-watch --onSuccess \"npm run start\" --onFailure \"echo Beep! Compilation Failed\"",
-    "deploy": "gcloud app deploy --project api-torrent-proxy",
     "start": "node index.js"
   },
   "dependencies": {
